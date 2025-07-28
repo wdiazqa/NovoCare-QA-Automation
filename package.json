@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:browserstack": "npx browserstack-cypress run --spec 'cypress/e2e/functional/**/*.cy.js'"
+    "cy:browserstack": "npx browserstack-cypress run --spec 'cypress/e2e/functional/**/*.cy.js'",
+    "cy:cypressCloud": "npx cypress run --record --key 33c8f958-5913-416e-b81b-baa75b8c408a --spec 'cypress/e2e/functional/**/*.cy.js'"
   },
   "repository": {
     "type": "git",
