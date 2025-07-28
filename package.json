@@ -4,7 +4,8 @@
   "description": "This repository contains the **end-to-end (E2E) automated test framework** for the **NovoCare web application**, implemented using [Cypress](https://www.cypress.io/). It is designed to validate critical functionalities, ensure platform stability, and support scalable test execution in both cloud and secure environments.",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:browserstack": "npx browserstack-cypress run --spec 'cypress/e2e/functional/**/*.cy.js'"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/wdiazqa/NovoCare-QA-Automation#readme",
   "devDependencies": {
+    "browserstack-cypress-cli": "^1.32.8",
     "cypress": "^14.5.3"
   }
 }
