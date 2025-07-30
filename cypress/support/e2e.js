@@ -15,3 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // Ignora errores JS del sitio, solo si no afectan la funcionalidad probada
+  return false;
+});

@@ -3,13 +3,22 @@
     "username": "balarengaswamy1",
     "access_key": "zf5ab4pMu8qHtRStDBRL"
   },
-  "browsers": [
+ "browsers": [
     {
       "browser": "chrome",
-      "os": "Windows 10",
-      "versions": ["latest"]
-    }
-    
+      "os": "Windows",
+      "os_version": "10"
+    },
+    {
+      "browser": "firefox",
+      "os": "Windows",
+      "os_version": "10"
+    },
+    {
+    "device": "Samsung Galaxy S23",
+    "os_version": "13.0",
+    "real_mobile": true
+  }
   ],
   "run_settings": {
     "cypress_config_file": "./cypress.config.js",
@@ -26,6 +35,7 @@
 
   "connection_settings": {
     "local": true,
-    "local_identifier": "novacare-tunnel"
+    "local_identifier": "novacare-tunnel",
+     "force_local": true
   }
 }
